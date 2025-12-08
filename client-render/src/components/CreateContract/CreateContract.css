@@ -29,13 +29,16 @@
     z-index: -1; /* Place the background behind the content */
 }
 
-.Component__title {
-    position: relative;
-    justify-self: center;
-    margin-top: 5rem;
-    font-size: 2.5rem;
-    color: white; /* White text for better visibility */
-    margin-bottom: 20px;
+.Component__title{
+  font-size: var(--font-medium);
+  color: var(--first-color);
+  margin: auto;
+  margin-bottom: 2rem;
+  align-self: center;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: white; 
+  margin-bottom: 20px;
 }
 
 .Component__form {
@@ -63,7 +66,7 @@
     justify-content: center;
     justify-self: center;
     text-align: center; /* Center the text inside the button */
-    margin-left: 100px;
+    margin-left: 130px !important;
     transition: background-color 0.3s ease; /* Smooth hover effect */
   }
   

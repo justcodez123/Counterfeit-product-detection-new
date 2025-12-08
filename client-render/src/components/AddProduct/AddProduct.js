@@ -83,13 +83,14 @@ const AddProduct = () => {
                 let transaction = await contract.addproduct(account, companyContractAddress, list);
                 await transaction.wait();
 
-                setUpdateStatus("✅ Products Added Successfully!");
+                setUpdateStatus("\t ✅ Products Added Successfully!");
             } else {
                 throw new Error("Please check that you are connected to a wallet and have provided all the fields.");
             }
         } catch (error) {
             console.error(error);
-            alert(`❌ Error: ${error.message}`);
+            alert(`\t Error: ${error.message}`);
+            setUpdateStatus("\t ❌ Failed to add products.");
         } finally {
             setLoading(false);
         }
@@ -122,7 +123,7 @@ const AddProduct = () => {
                 <button className='button__toggleAP form__button' onClick={addProducts} disabled={loading}>
                     {loading ? "Adding..." : "Add Product"}
                 </button>
-                <p>{updateStatus}</p>
+                <p style={{ whiteSpace: "pre-line", textAlign: "center" }}>{updateStatus}</p>
             </div>
 
             <div className="qrcode__container">

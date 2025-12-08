@@ -7,25 +7,39 @@ import Navigation from './components/Navigation/Navigation';
 import QRScanner from './components/QRScanner/QRScanner';
 import ProductAuthenticator from './components/VerifyProduct/ProductAuthenticator';
 import React,{useState} from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+//import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
 export const Metamask = () => {
   const [account, setAccount] = useState(null);
   return <Navigation account={account} setAccount={setAccount} />;
 };
 
-function App({ location }) {
+function ProtectedRoute({ children }) {
+  const isGuest = localStorage.getItem("guestUser") === "true";
+  const location = useLocation();
+
+  if (isGuest && location.pathname !== "/VerifyProduct") {
+    return <Navigate to="/VerifyProduct" replace />;
+  }
+
+  return children;
+}
+
+function App({location}) {
+
   const [account, setAccount] = useState(null);
+
   return (
       <>  
       <Navigation account={account} setAccount={setAccount} />
            <Routes location = {location}>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/AddProduct" element={<AddProduct />} />
-            <Route exact path="/CreateContract" element={<CreateContract />} />
+            <Route exact path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+            <Route exact path="/AddProduct" element={<ProtectedRoute><AddProduct /></ProtectedRoute>} />
+            <Route exact path="/CreateContract" element={<ProtectedRoute><CreateContract /></ProtectedRoute>} />
             {/* <Route exact path="/GetContract" element={<GetContract />} /> */}
             <Route exact path="/VerifyProduct" element={<ProductAuthenticator />} />
-            <Route exact path="/QRScanner" element={<QRScanner />} />
+            <Route exact path="/QRScanner" element={<ProtectedRoute><QRScanner /></ProtectedRoute>} />
            </Routes>
       </>
   );

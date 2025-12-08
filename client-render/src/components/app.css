@@ -132,7 +132,7 @@ body{
   justify-self: center;
   display: inline-block;
   background-color: var(--first-color); /* Use your theme color */
-  color: #fff; /* White text */
+  color: white; /* White text */
   padding: 0.75rem 1.5rem; /* Adequate padding */
   border-radius: 0.5rem; /* Rounded corners */
   font-weight: var(--font-medium);
@@ -209,10 +209,6 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
-
-
-
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -285,12 +281,18 @@ body {
 .Home__link{
   color: var(--first-color);
 }
-.Component__title{
+
+/* .Component__title{
   font-size: var(--font-medium);
   color: var(--first-color);
   margin: auto;
   margin-bottom: 2rem;
-}
+  align-self: center;
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: white; 
+  margin-bottom: 20px;
+} */
 
 .Component__form{
   display: grid;

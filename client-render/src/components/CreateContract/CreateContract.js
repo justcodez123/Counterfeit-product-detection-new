@@ -88,7 +88,7 @@ const DeployContract = ({ account: parentAccount }) => {
     return (
         <div className="DeployContract">
             <h3 className="Component__title">Create My Contract</h3>
-            <button className="button__toggleCC form__button" onClick={createContract}>
+            <button className="button__toggleCC" onClick={createContract}>
                 Create Contract
             </button>
             <div className="Component__info">

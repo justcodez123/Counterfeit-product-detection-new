@@ -66,7 +66,7 @@ const Navigation = ({ account, setAccount }) => {
       <div className='nav__menu'>
         <ul className='nav__list grid'>
         <li className='nav__item1'>
-            <text className='nav__logo'>Product Registry</text>
+            <text className='nav__logo'>Product Registration</text>
         </li>
           <li className='nav__item'>
             <button className='nav__link button__toggleH' onClick={() => navigate('/')}>Home</button>
