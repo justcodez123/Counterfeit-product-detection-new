@@ -4,7 +4,7 @@ import CreateContract from './components/CreateContract/CreateContract';
 // import GetContract from './components/GetContract/GetContract';
 import Home from './components/Home/Home';
 import Navigation from './components/Navigation/Navigation';
-import QRScanner from './components/QRScanner/QRScanner';
+//import QRScanner from './components/QRScanner/QRScanner';
 import ProductAuthenticator from './components/VerifyProduct/ProductAuthenticator';
 import React,{useState} from 'react';
 //import { useEffect } from 'react';
@@ -39,7 +39,7 @@ function App({location}) {
             <Route exact path="/CreateContract" element={<ProtectedRoute><CreateContract /></ProtectedRoute>} />
             {/* <Route exact path="/GetContract" element={<GetContract />} /> */}
             <Route exact path="/VerifyProduct" element={<ProductAuthenticator />} />
-            <Route exact path="/QRScanner" element={<ProtectedRoute><QRScanner /></ProtectedRoute>} />
+            {/* <Route exact path="/QRScanner" element={<ProtectedRoute><QRScanner /></ProtectedRoute>} /> */}
            </Routes>
       </>
   );
