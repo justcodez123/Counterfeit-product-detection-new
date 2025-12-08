@@ -4,5 +4,21 @@
     "react": "^19.0.0",
     "react-scripts": "^3.0.1",
     "react-transition-group": "^4.4.5"
-  }
+  },
+  "devDependencies": {
+    "html5-qrcode": "^2.3.8"
+  },
+  "name": "functional-counterfeit-detection",
+  "version": "1.0.0",
+  "description": "This is the functional Counterfeit Product Detection Project! ",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Functional--Counterfeit-Detection"
+  },
+  "author": "justcodez123",
+  "license": "ISC"
 }
