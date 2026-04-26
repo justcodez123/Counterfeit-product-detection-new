@@ -73,20 +73,20 @@ git clone [copied_url_from_top_right_corner_button)
 cd into project
 
 2. Install Dependencies
-# Install frontend dependencies
+ Install frontend dependencies
 npm install
 
-# Install backend dependencies
+Install backend dependencies ans set up environment variables
 cd backend && npm install
-3. VITE_API_URL=http://localhost:3000
+VITE_API_URL=http://localhost:3000
 JWT_SECRET=your_secret_key
 WEB3_PROVIDER_URL=your_infura_or_alchemy_url
 
 3. Run Locally
-# Start the Vite development server
+ Start the Vite development server
 npm run dev
 
-# Start the local Express backend
+ Start the local Express backend
 npm run server
 
 Developed by Ashish Kale.
