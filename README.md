@@ -68,8 +68,6 @@ To ensure absolute reliability before deployment, AuthentiChain utilizes a multi
 
 ## 💻 Local Setup & Development
 
-## 💻 Local Setup & Development
-
 **1. Clone the repository**
 ```bash
 git clone [https://github.com/AashishKaaley/AuthentiChain.git](https://github.com/AashishKaaley/AuthentiChain.git)
