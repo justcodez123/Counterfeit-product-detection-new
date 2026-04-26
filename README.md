@@ -68,26 +68,39 @@ To ensure absolute reliability before deployment, AuthentiChain utilizes a multi
 
 ## 💻 Local Setup & Development
 
-1. Clone the repository
-git clone [copied_url_from_top_right_corner_button)
-cd into project
+## 💻 Local Setup & Development
+
+**1. Clone the repository**
+```bash
+git clone [https://github.com/AashishKaaley/AuthentiChain.git](https://github.com/AashishKaaley/AuthentiChain.git)
+cd AuthentiChain
 
 2. Install Dependencies
- Install frontend dependencies
+Bash
+
+# Install frontend dependencies
 npm install
 
-Install backend dependencies ans set up environment variables
+# Install backend dependencies
 cd backend && npm install
+
+3. Environment Variables
+Create a .env file in the root directory:
+Code snippet
+
 VITE_API_URL=http://localhost:3000
 JWT_SECRET=your_secret_key
 WEB3_PROVIDER_URL=your_infura_or_alchemy_url
 
-3. Run Locally
- Start the Vite development server
+4. Run Locally
+Bash
+
+# Start the Vite development server
 npm run dev
 
- Start the local Express backend
+# Start the local Express backend
 npm run server
+```
 
 Developed by Ashish Kale.
 
