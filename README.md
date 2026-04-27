@@ -1,6 +1,6 @@
 ﻿# couterfeit_detection_new
 
- [[AuthentiChain](https:://authentichain-tec.me)]
+ [AuthentiChain](https://authentichain-tec.me)
 **Enterprise-Grade Counterfeit Product Detection via Blockchain**
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
